@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Soroban_2_0.jnlp">
+  <information>
+    <title>Suroban</title>
+    <vendor>Nour El Houda TINE</vendor>
+    <description>Soroban_2.0</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Soroban_2_0.jar" size="125865" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="900" height="700" main-class="Suroban"  name="Soroban_2.0" />
+  <update check="background"/>
+</jnlp>

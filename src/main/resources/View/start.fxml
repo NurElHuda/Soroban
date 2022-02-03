@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--
+  ~ Copyright (c) 2019.
+  ~
+  ~  /*
+  ~ * Nour El Houda Tine.
+  ~ * tinenourelhouda@gmail.com
+  ~  *  All Rights Reserved.
+  ~  *
+  ~  * NOTICE:  All information contained herein is, and remains
+  ~  * the property of Nour El Houda Tine,
+  ~  * The intellectual and technical concepts contained
+  ~  * herein are proprietary to Nour El Houda Tine
+  ~  * and its suppliers and may be covered by U.S. and Foreign Patents,
+  ~  * patents in process, and are protected by trade secret or copyright law.
+  ~  * Dissemination of this information or reproduction of this material
+  ~  * is strictly forbidden unless prior written permission is obtained
+  ~  */
+  -->
+
+<StackPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
+   <children>
+      <AnchorPane fx:id="_start_pane" style="-fx-background-color: #fffcf9;">
+         <children>
+            <HBox alignment="CENTER" layoutX="203.0" layoutY="121.0" prefHeight="394.0" prefWidth="802.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fx:id="_text" fill="#2d102cd4" strokeType="OUTSIDE" strokeWidth="10.0" style="-fx-font-size: 160pt;" text="Ready?" textAlignment="CENTER" wrappingWidth="703.1123046875">
+                     <font>
+                        <Font size="96.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane>
+         <children>
+            <JFXDrawer fx:id="_drawer" defaultDrawerSize="310.0" layoutX="335.0" layoutY="68.0" maxHeight="-Infinity" maxWidth="-Infinity" overLayVisible="false" prefHeight="602.0" prefWidth="329.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="68.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </JFXDrawer>
+            <Pane layoutX="335.0" maxHeight="-Infinity" prefHeight="64.0" prefWidth="1203.0" style="-fx-background-color: #fbf5f3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <children>
+                  <JFXHamburger fx:id="_hamburger" layoutX="19.0" layoutY="10.0" prefHeight="38.0" prefWidth="44.0" />
+               </children>
+            </Pane>
+            <AnchorPane fx:id="_film_pane" layoutX="280.0" prefHeight="800.0" prefWidth="920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
